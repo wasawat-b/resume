@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li.nav-item {
+  cursor: pointer;
+}
+ul li.nav-item::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: orangered;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+ul li.nav-item:hover::after {
+  width: 100%;
+}
+
+/*side scroll*/
+.sideBar {
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 35%;
+  left: 98%;
+}
+.sideBar a {
+  text-align: end;
+  color: rgb(0, 0, 0, 0.3);
+  text-decoration: none;
+  margin-top: 1%;
+  padding-right: 2%;
+}
+.sideBar a:hover {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(242, 243, 189, 0.3),
+      rgba(242, 243, 189, 0.1),
+      rgba(242, 243, 189, 0.1)
+    ),
+    url("./images/graduate1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.nameBlog {
+  position: absolute;
+  right: 15%;
+  text-align: center;
+}
+.name {
+  font-family: "Baloo 2", cursive;
+}
+.firstName {
+  font-family: "Parisienne", cursive;
+}
+
+.topicContainer {
+  width: 80%;
+  margin: 0 10%;
+  padding: 60px 0;
+  text-align: center;
+}
+.colorChange {
+  background-color: rgba(242, 243, 189, 0.3);
+}
+
+/*Profile*/
+.topic {
+  font-size: 46px;
+  display: inline-block;
+  padding: 0 100px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.blockPicfile img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.headerTopic {
+  font-size: 30px;
+  margin: 0 0 5px;
+}
+.profileList {
+  list-style-type: none;
+}
+
+/*Education*/
+.education img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*Experience*/
+.blockPic img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.jobClass {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.companyName {
+  color: rgba(0, 0, 0, 0.3);
+}
+video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*Skills*/
+.skills .fas,
+.skills .far {
+  color: crimson;
+}
+
+/*Contact*/
+.colorChangeBlack {
+  color: white;
+  background-color: rgba(27, 27, 27);
+}
+.topicBlack {
+  font-size: 46px;
+  display: inline-block;
+  padding: 0 100px 15px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contactLink a {
+  text-decoration: none;
+}
+.contactLink .fas,
+.contactLink .fab {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contactLink .fas:hover,
+.contactLink .fab:hover {
+  color: rgba(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  ul li:hover::after {
+    width: 0%;
+  }
+}
+
+@media (max-width: 576px) {
+  ul li:hover::after {
+    width: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sideBar {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    left: 95%;
+  }
+  .sideBar a {
+    padding: 0;
+  }
+
+  .topicContainer {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .topic {
+    font-size: 36px;
+    padding: 0 50px 15px;
+  }
+  .headerTopic {
+    font-size: 24px;
+  }
+
+  .imagePic {
+    margin-bottom: 30px;
+  }
+
+  .jobClass {
+    font-size: 24px;
+    text-align: center;
+  }
+  .companyName {
+    text-align: center;
+  }
+  .contentBlog {
+    text-align: center;
+  }
+
+  .topicBlack {
+    font-size: 36px;
+    padding: 0 50px 15px;
+  }
+
+  .blockPic img {
+    height: 200px;
+  }
+  video {
+    height: 200px;
+  }
+}
