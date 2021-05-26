@@ -251,7 +251,7 @@ function App() {
             </div>
           </div>
           <div className="row my-5 mx-0 d-flex justify-content-center align-items-center">
-            <video className="col-7 col-lg-6 my-3" autoPlay loop muted>
+            <video className="col-7 col-lg-6 my-3" playsInline autoPlay loop muted>
               <source src={tuitor} type="video/mp4" />
             </video>
             <div className="col-12 col-lg-6 text-start">
@@ -291,7 +291,7 @@ function App() {
             </div>
           </div>
           <div className="row my-5 mx-0 d-flex justify-content-center align-items-center">
-            <video className="col-7 col-lg-6 my-3" autoPlay loop muted>
+            <video className="col-7 col-lg-6 my-3" playsInline autoPlay loop muted>
               <source src={waiter} type="video/mp4" />
             </video>
             <div className="col-12 col-lg-6 text-start">
